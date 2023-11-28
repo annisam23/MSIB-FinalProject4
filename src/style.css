@@ -73,12 +73,32 @@ section{
     padding: 1rem;
     border-bottom: .1rem solid #fff4;
     color: #fff;
+    margin-bottom: 1px;
 }
 
 .heading span{
     color: var(--lilac);
 }
-
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 4px;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
+  }
+  .social-icons .social-icon:hover {
+    background-color: var(--lilac);
+  }
+  
 header{
     position: fixed;
     top: 0;
@@ -150,81 +170,64 @@ header .navbar ul li a:hover{
     display: none;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    padding: 0 15rem;
-}
 
-.home h3{
-    font-size: 2.5rem;
-    color: #fff;
-}
-
-.home h1{
-    font-size: 5rem;
-    color: #fff;
-}
-.home h1 span{
-    color: var(--lilac);
-}
-
-.home p{
-    font-size: 2rem;
-    color: #eee;
-    padding: 1rem 0;
-}
-
-.about .row{
+section.resume-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-}
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 75rem;
+    color: #fff;
+    margin-left: 30px;
+  }
+  section.resume-section .resume-section-content {
+    width: 100%;
+  }  
 
-.about .row .info{
-    flex:  1 1 48rem;
-    padding: 2rem 1rem;
-    padding-left: 6rem;
+.subheading{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 3px;
 }
+.dev-icons {
+    font-size: 5rem;
+  }
 
-.about .row .info h3{
-    font-size: 2rem;
+.resume-section h1{
+    font-size: 6rem;
+}
+.resume-section h1 span{
     color: var(--lilac);
-    padding: 1rem 0;
-    font-weight: normal;
 }
 
-.about .row .info h3 span{
+.subheading a {
+    color: var(--lilac);
+}
+
+.resume-section p{
+    font-size: 15px;
     color: #eee;
-    padding: 0.5rem;
+    padding: 1rem 0;
 }
 
-.about .row .counter{
-    flex:  1 1 48rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-.about .row .counter .box{
-    width: 20rem;
-    background: #222;
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem;
-}
-
-.about .row .counter .box span{
-    font-size: 4rem;
+#experience h3{
+    font-size: 3rem;
     color: var(--lilac);
+    padding: 1rem 0;
+    font-weight: bolder;
 }
 
-.about .row .counter .box h3{
+#experience .subheading {
     font-size: 2rem;
-    color:#fff;
+}
+#experience ul{
+    margin-top: 4px;
+}
+#experience li{
+    font-size: 1.5em;
 }
 
 .education .box-container{
@@ -305,64 +308,6 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
-.contact .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contact .row .content{
-    flex:1 1 30rem;
-    padding: 4rem;
-    padding-bottom: 0;
-}
-
-.contact .row form{
-    flex:1 1 45rem;
-    padding: 2rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
-}
-
-.contact .row form .box{
-    padding: 1.5rem;
-    margin: 1rem 0;
-    background: #333;
-    color: #fff;
-    text-transform: none;
-    font-size: 1.7rem;
-    width: 100%;
-}
-
-.contact .row form .message{
-    height: 15rem;
-    resize: none;
-}
-
-.contact .row .content .title{
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-.contact .row .content .info{
-    text-transform: lowercase;
-}
-.contact .row .content .info h3{
-    display:  flex;
-    align-items: center;
-    font-size: 2rem;
-    color: #eee;
-    padding: 1rem 0;
-    font-weight: normal; 
-}
-
-.contact .row .content .info h3 i{
-    padding-right: 1rem;
-    color: var(--lilac);
-}
-
 .top{
     position: fixed;
     bottom: 7.5rem;
@@ -375,6 +320,19 @@ strong{
     font-weight: bolder;
 }
 
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .list-inline-item {
+    display: inline-block;
+  }
+  .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
 
 
 /*Media query*/
